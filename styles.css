@@ -1,0 +1,26 @@
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+.image-container {
+    text-align: center;
+}
+
+.image-container1 img {
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-top: 20px}
+body{
+    background-color:lightskyblue
+}
