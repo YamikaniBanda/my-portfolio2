@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROJECTS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h2>MY contacts</h2>
+      <p>
+        You can contact me on my
+        <li>Mobile phone no. +265 888 38 91 46</li>
+        <li>whatsapp on +265 888 38 91 46</li>
+        <li>Instagram @benjie.shots</li>
+        <li>Gmail @ benjaminchirambo@gmail.com</li>
+
+        <h2>MAY WE KNOW YOU</h2>
+        <P>By filling the form below which includes your name and phone number<br>
+            <form id="maywe" onsubmit="return validateForm()">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <span id="nameError" class="error"></span>
+                </div>
+                <div>
+                  <label for="phone number">Phone Number:</label>
+                  <input type="number" id="pnumber" name="Phone number" required>
+                  <span id="phonenumberError" class="error"></span>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+        </P>
+
+      </p>
+      <h2>My Location</h2>
+      <div id="map" style="width: 400px; height: 300px;"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  
+</body>

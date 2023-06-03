@@ -1,59 +1,48 @@
-<! DOCTYPE>
-<html lang="en-us">
-    
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
 <body>
-<link rel="stylesheet" href="style.css">
-<header class="header"><h1> BENJAMIN CHIRAMBO</h1>
-<hr>
-<nav class="nav main-nav">
+  
+  <nav>
     <ul>
-        <li>
-            <a href="HOME.html">HOME</a>
-            <a href="SERVICES.html">SERVICES</a>
-        </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
-</header>
-<section>
-    <div id="container3">
-<h2>introduction</h2>
-<p1>
-        <div id="container">
-        <img src="BENJIE.jpg" alt="photo of me"> </div><br>
-   <li> My name is BENJAMIN CHIRAMBO i am 22 years old , am a student at mzuzu university and majoring in ICT <br>
-    So am good at taking pictures of nature with my phone, And i have received both  compliments and criticism.<br>
-    But i have found out that people really like my pictures and once i had a job to take pictures for a client and they liked it. </li>
-</p1> 
-<h2>Featured projects</h2>
-<p2>
-    <ol> <div id="container1"><img id="flower" src="flower.jpg"></div> <br>I took this picture of a sunflower in lilongwe and you can check this on my instagram page
-    with this link<br><a href="https://www.instagram.com/p/Crq90FWI_xR/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">sunflower</a></ol>
-    <ol> <div id="container2"><img id="bee" src="bee.jpg"></div><li>i took this picture of a bee in kanjedza forest blantyre and you can check it with the word bee<br></li><a href="//www.instagram.com/p/Cp5PDacIhV4/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== ">bee</a></ol>
-</p2>
-<h2>skills</h2>
-<p2>
-On my skills i do <br>
-<li>take good pictures</li>
-<li>edit the picture</li> <br>
-On tools 
-<li>sunlight : since i just  my phone when taking pictures</li>
-<li>i use adobe lightroom and picsart when editing</li><br>
- On technology
- <li>i use my phone to take pictures</li>
-</p2>
-    </div>
-</section>
+  </nav>
 
-<footer>
-    <div class="footer-content">
-    <h3>contact information</h3>
-    <p3> you can contact us on the bellow information</p3>
-    <ul>
-        our gmail account "benjaminchirambo2@gmail.com "<br>
-        <a href="https://www.instagram.com/benjie.shots/"><i class="fa-instagram">instagram @benjie.shots</i></a><br>
-        on our phone number 265888389146
-    </ul>
-</div>
-</footer>
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="p1.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="a1.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="L1.jpg" alt="Slide 3">
+    </div>
+  </div>
+
+  <h2>Contact Form</h2>
+  <form id="contactForm" onsubmit="return validateForm()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <span id="nameError" class="error"></span>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span id="emailError" class="error"></span>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <h3 id="greeting"></h3>
+
 </body>
 </html>
